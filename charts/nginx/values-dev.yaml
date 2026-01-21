@@ -1,0 +1,15 @@
+replicaCount: 1
+
+service:
+  type: ClusterIP
+
+autoscaling:
+  enabled: false
+
+resources:
+  limits:
+    cpu: "200m"
+    memory: "256Mi"
+  requests:
+    cpu: "100m"
+    memory: "128Mi"
